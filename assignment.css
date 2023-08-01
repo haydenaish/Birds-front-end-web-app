@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 15fr 80fr;
+    grid-template-rows: 100px 1fr 100px;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    padding: 15px;
+    grid-column-start: 1;
+    grid-column: span 3;
+    border-bottom: 5px solid black;
+    background-color: rgb(65, 134, 201);
+    color: white;
+    font-size: 24pt;
+    font-weight: bold;
+}
+footer{
+    background-color: rgb(65, 134, 201);
+    grid-column: span 2;
+}
+
+
+
+.sidebar {
+    border-right: 3px solid #693f7e;
+    background-color: black;
+
+}
+
+.photo-container{
+    background-color: beige;
+}
