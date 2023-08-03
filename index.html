@@ -6,26 +6,54 @@
     <title>Birds of Aotearoa</title>
     <link preload rel="stylesheet" href="assignment.css">
     <script defer src="assignment.js"></script>
-    <script defer src="assign_util.js"></script>
 </head>
 
 <body>
     <div class="grid">
         <header>
-            <div>
-                Birds of Aotearoa
-            </div>
+            Birds of Aotearoa
         </header>
         <aside class="sidebar">
-            <ul>
+            <form class="filter">
+                <h1>Filter Birds</h1>
+                <label for="Search"> Search</label><br>
+                <input type="text" id="Search" name="Search" placeholder="Hoiho"><br>
 
-            </ul>
+                <label for="Conserv"> Conservation Status</label><br>
+                <select name="Conservation Status" id="Conserv">
+                    <option value="Any">Any</option>
+                    <option value="Not Threatened">Not threatened</option>
+                    <option value="Naturally Uncommon">Naturally Uncommon</option>
+                    <option value="Relicit">Relict</option>
+                    <option value ="Recovering">Recovering</option>
+                    <option value="Declining">Declining</option>
+                    <option value="Nationally Increasing">Nationally Increasing</option>
+                    <option value="Nationally Vulnerable">Nationally Vulnerable</option>
+                    <option value="Nationally Endangered">Nationally Endangered</option>
+                    <option value="Nationally Critical">Nationally Critical</option>
+                    <option value="Data Deficient">Data Deficient</option>
+                </select><br>
+                <label for="weight"> Sort By Weight</label><br>
+                <select name="Sort" id = "weight" >
+                    <option value="Any">Any</option>
+                    <option value="Lightest to heaviest"> Lightest to heaviest</option>
+                    <option value="Heaviest to Lightest"> Heaviest to lightest</option>
+                </select>
+                <label for="Length"> Sort By Length</label><br>
+                <select name="Sort" id = "Length" >
+                    <option value="Any">Any</option>
+                    <option value="Shortest to tallest"> Shortest to tallest</option>
+                    <option value="Tallest to shortest"> Tallest to shortest</option>
+                </select>
+            </form>
+            <hr>
+            <h1>Conservation Status</h1>
         </aside>
         <main class="photo-container">
 
         </main>
         <footer>
-            data liscend from
+            
         </footer>
             
     </div>
