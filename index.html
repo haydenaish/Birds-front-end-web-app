@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Birds of Aotearoa</title>
-    <link preload rel="stylesheet" href="assignment.css">
+    <link rel="stylesheet" href="assignment.css">
     <script defer src="assignment.js"></script>
 </head>
 
@@ -16,9 +16,9 @@
         <aside class="sidebar">
             <form class="filter">
                 <h1>Filter Birds</h1>
-                <label for="Search"> Search</label><br>
-                <input type="text" id="Search" name="Search" placeholder="Hoiho"><br>
-
+                <label for="searchInput"> Search</label><br>
+                <input type="text" id="searchInput" placeholder="Hoiho">
+                
                 <label for="Conserv"> Conservation Status</label><br>
                 <select name="Conservation Status" id="Conserv">
                     <option value="Any">Any</option>
@@ -37,7 +37,7 @@
                 <select name="Sort" id = "weight" >
                     <option value="Any">Any</option>
                     <option value="Lightest to heaviest"> Lightest to heaviest</option>
-                    <option value="Heaviest to Lightest"> Heaviest to lightest</option>
+                    <option value="Heaviest to lightest"> Heaviest to lightest</option>
                 </select>
                 <label for="Length"> Sort By Length</label><br>
                 <select name="Sort" id = "Length" >
@@ -45,16 +45,19 @@
                     <option value="Shortest to tallest"> Shortest to tallest</option>
                     <option value="Tallest to shortest"> Tallest to shortest</option>
                 </select>
+                <button  onclick="reset()" id = "reset" > Reset</button>
             </form>
             <hr>
-            <h1>Conservation Status</h1>
+            <div id="status_key">
+                <h1>Conservation Status</h1>
+            </div>
+
         </aside>
+            
         <main class="photo-container">
 
         </main>
-        <footer>
-            
-        </footer>
+        
             
     </div>
 
