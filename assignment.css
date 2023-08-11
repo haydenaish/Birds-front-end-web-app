@@ -3,8 +3,7 @@
     padding: 0;
 }
     
-    
-    
+
     
 hr {
     position: relative;
@@ -22,7 +21,7 @@ hr {
 .grid{
     display: grid;
     grid-template-columns: 15fr 80fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 100px 1fr 100px;
 }
     
     
@@ -32,11 +31,20 @@ header{
     text-align: center;
     padding: 35px;
     grid-column-start: 1;
-    grid-column: span 3;
+    grid-column: span 2;
     background-color: rgb(65, 134, 201);
     color: white;
     font-size: 24pt;
     font-weight: bold;
+}
+
+footer{
+    grid-column: span 2;
+    background-color: rgb(65, 134, 201);
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
 }
     
 
