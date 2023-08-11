@@ -43,6 +43,7 @@ footer{
     background-color: rgb(65, 134, 201);
     color: white;
     display: inline-block;
+    padding:35px;
     vertical-align: middle;
     text-align: center;
 }
